@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwt_login?useSSL=false&serverTimezone=Asia/Seoul
+    username: gorilla
+    password: gorilla
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: "ThisIsAOhgiraffersVeryLongAndSecureSecretKeyForHS256AlgorithmExampleOnlyChangeItInProduction"
+  access-token-validity-milliseconds: 3600000 # 1시간
+  refresh-token-validity-milliseconds: 864000000 # 10일
