@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/jwt_login?useSSL=false&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/jpa_lecture?useSSL=false&serverTimezone=Asia/Seoul
     username: gorilla
     password: gorilla
     driver-class-name: com.mysql.cj.jdbc.Driver
